@@ -5,7 +5,7 @@ function Hero() {
     <section id="home" className="bg-white">
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-6 py-20 lg:grid-cols-2 lg:py-28">
 
-        {/* Hero Content */}
+        
         <div>
           <h1 className="text-4xl font-extrabold leading-[1.08] tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
             Build Your Ideal
@@ -37,13 +37,14 @@ function Hero() {
           </div>
         </div>
 
-        {/* Hero Image */}
+        
         <div className="flex justify-center lg:justify-end">
           <img
-            src={bannerStack}
-            alt="Development technology stack"
-            className="w-full max-w-md object-contain"
-          />
+  src={bannerStack}
+  alt="Development technology stack"
+  loading="lazy"
+  className="w-full max-w-md object-contain transition duration-500 hover:scale-105"
+/>
         </div>
       </div>
     </section>
