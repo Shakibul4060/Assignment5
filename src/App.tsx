@@ -117,7 +117,11 @@ function App() {
         {loading ? (
           <div className="flex min-h-60 items-center justify-center rounded-xl border border-slate-100">
             <div className="flex flex-col items-center gap-3">
-              <span className="loading loading-spinner loading-lg text-pink-500"></span>
+              <span
+  role="status"
+  aria-label="Loading technologies"
+  className="loading loading-spinner loading-lg text-pink-500"
+></span>
 
               <p className="text-sm text-slate-500">
                 Loading technologies...
