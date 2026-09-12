@@ -65,7 +65,7 @@ function YourStack({
               <button
                 onClick={() => onRemove(technology.id)}
                 aria-label={`Remove ${technology.name}`}
-                className="text-lg leading-none text-slate-400 transition hover:text-red-500"
+               className="cursor-pointer text-lg leading-none text-slate-400 transition hover:text-red-500"
               >
                 ×
               </button>
@@ -78,7 +78,7 @@ function YourStack({
       <button
         onClick={onRemoveAll}
         disabled={stack.length === 0}
-        className="mt-5 w-full rounded-md border border-red-300 py-2 text-[11px] font-medium text-red-500 transition hover:bg-red-50 disabled:cursor-not-allowed disabled:opacity-50"
+        className="mt-5 w-full cursor-pointer rounded-md border border-red-300 py-2 text-[11px] font-medium text-red-500 transition hover:bg-red-50 disabled:cursor-not-allowed disabled:opacity-50"
       >
         Remove All
       </button>

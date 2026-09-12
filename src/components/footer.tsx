@@ -55,7 +55,7 @@ function Footer() {
             </div>
           </div>
 
-          {/* Product */}
+         
           <div>
             <h3 className="text-[11px] font-bold uppercase tracking-wide text-slate-900">
               Product
@@ -76,7 +76,7 @@ function Footer() {
             </div>
           </div>
 
-          {/* Company */}
+          
           <div>
             <h3 className="text-[11px] font-bold uppercase tracking-wide text-slate-900">
               Company
@@ -97,7 +97,7 @@ function Footer() {
             </div>
           </div>
 
-          {/* Legal */}
+          
           <div>
             <h3 className="text-[11px] font-bold uppercase tracking-wide text-slate-900">
               Legal

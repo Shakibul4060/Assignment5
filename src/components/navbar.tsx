@@ -3,7 +3,7 @@ function Navbar() {
     <nav className="sticky top-0 z-50 border-b border-slate-100 bg-white/95 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
 
-        {/* Logo */}
+        
         <a href="#home" className="flex items-center gap-2">
           <span className="flex h-7 w-7 items-center justify-center rounded-md bg-linear-to-r from-fuchsia-500 to-purple-600 text-[10px] font-bold text-white">
             DS
@@ -14,7 +14,7 @@ function Navbar() {
           </span>
         </a>
 
-        {/* Navigation Links */}
+       
         <div className="hidden items-center gap-7 text-xs text-slate-600 md:flex">
           <a
             href="#home"
