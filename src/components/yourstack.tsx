@@ -14,7 +14,7 @@ function YourStack({
   return (
     <aside className="h-fit rounded-xl border border-slate-200 bg-white p-4 shadow-sm lg:sticky lg:top-24">
 
-      {/* Heading */}
+     
       <div>
         <h2 className="text-base font-bold text-slate-800">
           Your Stack
@@ -26,7 +26,7 @@ function YourStack({
         </p>
       </div>
 
-      {/* Empty State */}
+      
       {stack.length === 0 ? (
         <div className="mt-5 rounded-lg border border-dashed border-slate-200 p-5 text-center">
           <div className="text-2xl">🧩</div>
@@ -74,7 +74,7 @@ function YourStack({
         </div>
       )}
 
-      {/* Remove All */}
+      
       <button
         onClick={onRemoveAll}
         disabled={stack.length === 0}
