@@ -54,13 +54,15 @@ function Navbar() {
 
         {/* Authentication */}
         <div className="flex items-center gap-4">
-          <button className="hidden text-xs font-medium text-slate-700 transition hover:text-pink-500 sm:block">
-            Sign In
-          </button>
+          <button
+  className="hidden cursor-pointer text-xs font-medium text-slate-700 transition hover:text-pink-500 sm:block"
+>
+  Sign In
+</button>
 
-          <button className="rounded-full bg-linear-to-r from-pink-600 to-fuchsia-600 px-5 py-2.5 text-xs font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-lg">
-            Sign Up
-          </button>
+          <button className="cursor-pointer rounded-full bg-linear-to-r from-pink-600 to-fuchsia-600 px-5 py-2.5 text-xs font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-lg">
+  Sign Up
+</button>
         </div>
       </div>
     </nav>
