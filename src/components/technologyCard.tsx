@@ -1,4 +1,4 @@
-import type { technology as Technology } from "../types/technology";
+import type { Technology } from "../types/technology";
 
 interface TechnologyCardProps {
   technology: Technology;

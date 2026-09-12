@@ -7,11 +7,11 @@ import TechnologyCard from "./components/technologyCard";
 import YourStack from "./components/yourstack";
 import Footer from "./components/footer";
 
-import type { technology } from "./types/technology";
+import type { Technology } from "./types/technology";
 
 function App() {
-  const [technologies, setTechnologies] = useState<technology[]>([]);
-  const [stack, setStack] = useState<technology[]>([]);
+  const [technologies, setTechnologies] = useState<Technology[]>([]);
+  const [stack, setStack] = useState<Technology[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -23,7 +23,7 @@ function App() {
           throw new Error("Failed to load technologies");
         }
 
-        const data: technology[] = await response.json();
+        const data: Technology[] = await response.json();
 
         setTechnologies(data);
       } catch (error) {
@@ -37,7 +37,7 @@ function App() {
     loadTechnologies();
   }, []);
 
-  const handleAdd = (technology: technology) => {
+  const handleAdd = (technology: Technology) => {
     const alreadyAdded = stack.some(
       (item) => item.id === technology.id
     );
